@@ -35,3 +35,9 @@ const clearUserInput = () => {
 checkBtn.addEventListener("click", checkUserInput);
 
 clearBtn.addEventListener("click", clearUserInput);
+
+userInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    checkUserInput();
+  }
+}
